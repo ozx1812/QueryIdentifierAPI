@@ -8,6 +8,10 @@ services:
     build: ./src
     ports:
       - '9992:80'
+  apireplica3:
+    build: ./src
+    ports:
+      - '9993:80'
   nginx:
     build: ./nginx
     ports:
