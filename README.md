@@ -19,3 +19,5 @@ The server should decide whether the input text is a sentence, paragraph, questi
 ## problem solving
 
 - here the input text identification task is simple and compute intensive, can be solved using regex match
+- api can be developed using various frameworks.
+- fastapi - high performance api, built around starlette and pydantic
