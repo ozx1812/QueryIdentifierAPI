@@ -131,3 +131,9 @@ curl -X POST \
     ```
   - build the images again using `docker-compose build`
   - start the services again `docker-compose up`
+
+## Shortcomings in identification
+
+- some special cases are not covered since it requires special handling
+- examples
+  - "1.1.1.1" - true identification is IP address but the api will identify as paragraph.
