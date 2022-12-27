@@ -19,3 +19,4 @@ services:
     depends_on:
       - apireplica1
       - apireplica2
+      - apireplica3
