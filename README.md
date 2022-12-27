@@ -14,7 +14,11 @@ The server should decide whether the input text is a sentence, paragraph, questi
 
 ## designing
 
-- to be added...
+- to support huge number of concurrent http requests,
+  - an api should be deployed on machine with many resources(more cpu core) or
+  - multiple replicas of an api should be running behind a good http load-balancer
+- the first option is not a viable.
+- so choosing 2nd option, with nginx as a load balancer and running multiple replicas of dockerized api behind it.
 
 ## problem solving
 

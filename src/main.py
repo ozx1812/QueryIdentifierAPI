@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from typing import Optional, List, Dict
 from pydantic import BaseModel
-from query_service import classify_query_service
+from .query_service import classify_query_service
 
 app = FastAPI()
 
