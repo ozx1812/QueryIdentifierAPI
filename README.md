@@ -11,3 +11,11 @@ The server should handle requests from different users parallelly
 The user request will contain English text
 
 The server should decide whether the input text is a sentence, paragraph, question, or URL
+
+## designing
+
+- to be added...
+
+## problem solving
+
+- here the input text identification task is simple and compute intensive, can be solved using regex match
