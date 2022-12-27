@@ -1,0 +1,34 @@
+version: '3.9'
+services:
+  apireplica1:
+    build: ./src
+    ports:
+      - '9991:80'
+  apireplica2:
+    build: ./src
+    ports:
+      - '9992:80'
+  nginx:
+    build: ./nginx
+    ports:
+      - '9998:80'
+    depends_on:
+      - apireplica1
+      - apireplica2
+# version: '3.9'
+# services:
+#   apireplica1:
+#     image: 'ozxx33/query-identifier-api:1.0'
+#     ports:
+#       - '9991:80'
+#   apireplica2:
+#     image: 'ozxx33/query-identifier-api:1.0'
+#     ports:
+#       - '9992:80'
+#   nginx:
+#     image: 'ozxx33/nginx-load-balancer:1.0'
+#     ports:
+#       - '9998:80'
+#     depends_on:
+#       - apireplica1
+#       - apireplica2
